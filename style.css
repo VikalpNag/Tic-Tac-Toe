@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Anta", sans-serif;
+  /* font-weight: 400;
+  font-style: normal; */
+  font-family: "Fredoka", sans-serif;
+}
+
+body {
+    background-image: url('/green board.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    backdrop-filter: blur(500px); /* Adjust the blur radius as needed */
+}
+
+.container{
+    height: 100vh;
+    width: 100vw;
+ 
+    /* background-color: rgb(44, 51, 65); */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    font-size: 100px;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 5px;
+    text-decoration:overline;
+    text-decoration:underline;
+}
+
+.boxes{
+    display: flex;
+    height: 610px;
+    width: 610px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 10px;
+    
+
+}
+
+.box{
+    height: 200px;
+    width: 200px;
+    /* row-gap: 5px;
+    column-gap: 5px;  */
+    font-size: 180px;
+    font-weight: 100;
+    border-radius: 0px;
+    color: rgb(194, 10, 0);
+    background-image: url(/paper.jpg);
+    background-color: bisque;
+    cursor: pointer;
+    font-family: "Fredoka", sans-serif;
+}
+
+.reset-btn{
+    height: 50px;
+    width: 200px;
+    border-radius: 20px;
+    color: #c70000;
+    background-color: rgb(255, 255, 255);
+    font-size: 20px;
+    border: 0px;
+    cursor: pointer;
+    &:hover{
+        background-color: rgb(31, 30, 32);
+        color: #ffffff;
+    }
+}
+
+.new-btn{
+    height: 50px;
+    width: 200px;
+    border-radius: 20px;
+    color: midnightblue;
+    background-color: rgb(255, 255, 255);
+    font-size: 20px;
+    border: 0px;
+    cursor: pointer;
+    &:hover{
+        background-color: rgb(31, 30, 32);
+        color: #ffffff;
+    }
+}
+
+.msg{
+    color: white;
+    font-size: 50px;
+}
+
+.left-side{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
